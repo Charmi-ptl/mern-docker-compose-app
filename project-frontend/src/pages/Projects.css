@@ -1,0 +1,142 @@
+/* General container for all projects */
+.projects-container {
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Title */
+.projects-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* Individual Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Info inside card */
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Detail View */
+.project-detail-card {
+  margin: 40px auto 60px;
+  max-width: 1000px;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-margin-top: 80px;
+  position: relative;
+}
+
+/* Back Button */
+.back-button {
+  background: #333;
+  color: white;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #555;
+}
+
+/* Absolute Back Button Styling */
+.back-button-absolute {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+/* Carousel Image Display */
+.carousel-wrapper {
+  position: relative;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Dot Indicators */
+.dot-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.dot {
+  font-size: 22px;
+  margin: 0 6px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.dot:hover {
+  color: #888;
+}
+
+.dot.active {
+  color: #222;
+}

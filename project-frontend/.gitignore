@@ -1,0 +1,28 @@
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+project-frontend/build/
+project-backend/dist/
+
+# Environment variables
+.env
+.env.*
+.env.local
+
+# Docker
+docker-compose.override.yml
+
+# Images / assets (optional but recommended)
+assets/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
